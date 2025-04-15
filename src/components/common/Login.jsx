@@ -31,9 +31,9 @@ export const Login = () => {
             navigate("/user/userdashboard") //check in app.js
           }
         },5000)
-        // if(res.data.data.roleId.name === "USER"){
-        //   navigate("/user") //check in app.js
-        // }
+        if(res.data.data.role === "admin"){
+          navigate("/admindashboard") //check in app.js
+        }
       
         // Redirect user if needed
       } else {

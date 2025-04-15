@@ -31,6 +31,7 @@ import { AddFinancialGoal } from './components/user/financialgoals/AddFinancialG
 import { AddExpense } from './components/user/expense/AddExpense'
 import { UpdateExpense } from './components/user/expense/UpdateExpense'
 import { UpdateFinancialGoal } from './components/user/financialgoals/UpdateFinancialGoal'
+import { AdminDashboard } from './components/admin/AdminDashboard'
 // import "./assets/adminlte.min.css";
 // import "./assets/adminlte.min.css"
 
@@ -59,6 +60,7 @@ function App() {
 
             <Route path="/user" element={<UserSidebar />}>
               <Route path="profile" element={<UserProfile />}></Route>
+              
               <Route path="addincome" element={<AddIncome />}></Route>
               <Route path="displayincome" element={<DisplayIncome />}></Route>
               <Route path='updateincome/:id'element={<UpdateIncome/>}></Route>
@@ -80,6 +82,8 @@ function App() {
               <Route path="generate-report"element={<GenerateReport/>}></Route>
               <Route path="notificationdashboard" element={<NotificationDashboard />}></Route>
             </Route>
+
+            <Route path='/admindashboard'element={<AdminDashboard/>} ></Route>
           </Route>
 
 
